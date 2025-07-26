@@ -100,6 +100,7 @@ const Contact: React.FC = () => {
                   <a
                     key={index}
                     href={info.action}
+                    target='_blank'
                     className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 block"
                   >
                     <div className="flex items-center mb-3">
