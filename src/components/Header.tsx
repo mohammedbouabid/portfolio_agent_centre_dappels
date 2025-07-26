@@ -75,7 +75,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = 'cv_salma.pdf'; // file path relative to public/
+                link.href = 'https://drive.google.com/file/d/1XsjQpQR3Tn2d7pnI4dQuCX9pgF-OA76X/view?usp=drive_link'; // file path relative to public/
                 link.target = "_blank";
                 document.body.appendChild(link);
                 link.click();
