@@ -74,7 +74,12 @@ const Header: React.FC = () => {
             </a>
             <button
               onClick={() => {
-                /* Download CV logic */
+                const link = document.createElement('a');
+                link.href = 'cv_salma.pdf'; // file path relative to public/
+                link.target = "_blank";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
               }}
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
               title="Télécharger CV"
