@@ -10,8 +10,15 @@ import {
   Database,
   Flame,
   Handshake,
-  Puzzle
+  Puzzle,
+  Import
 } from 'lucide-react';
+import ukIcon from '/uk.png';
+import frIcon from '/fr.png';
+import skIcon from '/soft_skill.svg';
+import tsIcon from '/technical_skill.svg';
+import langSvg from '/language.png';
+
 
 const Skills: React.FC = () => {
   const technicalSkills = [
@@ -120,12 +127,12 @@ const Skills: React.FC = () => {
             </div>
           </div>
           <div className='ml-20 mt-36'>
-            <img src="technical_skill.svg" width={'500px'}/>
+            <img src={tsIcon} width={'500px'}/>
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
           <div className='mt-32'>
-            <img src="soft_skill.svg" width={'500px'}/>
+            <img src={skIcon} width={'500px'}/>
           </div>
           {/* Soft Skills */}
           <div>
@@ -148,7 +155,7 @@ const Skills: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <img src="fr.png" alt="🇫🇷" className='w-12 m-auto mb-4'/>
+              <img src={frIcon} alt="🇫🇷" className='w-12 m-auto mb-4'/>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   Français
                 </h4>
@@ -164,7 +171,7 @@ const Skills: React.FC = () => {
               </div>
 
               <div className="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <img src="uk.png" alt="🇬🇧" className='w-12 m-auto mb-4'/>
+                <img src={ukIcon} alt="🇬🇧" className='w-12 m-auto mb-4'/>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   Anglais
                 </h4>
@@ -189,7 +196,7 @@ const Skills: React.FC = () => {
             </div>
           </div>
           <div className='mt-20 ml-28'>
-            <img src="language.png" width={'380px'}/>
+            <img src={langSvg} width={'380px'}/>
           </div>
         </div>
       </div>
