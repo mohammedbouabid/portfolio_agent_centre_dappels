@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
       icon: Download,
       title: 'CV',
       value: 'Télécharger CV',
-      action: 'cv_salma.pdf',
+      action: 'https://drive.google.com/file/d/1XsjQpQR3Tn2d7pnI4dQuCX9pgF-OA76X/view?usp=drive_link',
       color: 'text-orange-600 dark:text-orange-400',
     },
   ];
