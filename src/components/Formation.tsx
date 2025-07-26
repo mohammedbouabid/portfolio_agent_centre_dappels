@@ -1,112 +1,115 @@
 import React from 'react';
 import {
   CheckCircle,
-  Phone,
-  MessageSquare,
-  Users,
-  Clock,
+  GraduationCap,
+  BookOpen,
   Award,
+  Calendar,
 } from 'lucide-react';
 
-const Experience: React.FC = () => {
-  const experiences = [
+const Formation: React.FC = () => {
+  const formations = [
     {
-      title: "Téléconseillère – Webhelp Maroc",
-      period: 'Janvier 2023 – Juin 2024',
-      icon: Phone,
+      title: "DTS – Communication des Entreprises",
+      period: '2019 – 2021',
+      institution: 'OFPPT ISTA NTIC Sidimarouf 2 – Casablanca',
+      icon: GraduationCap,
       description:
-        "Gestion d'une série d'appels de clients d’un opérateur téléphonique français",
+        "Formation spécialisée en communication d'entreprise et relation client",
       achievements: [
-        'Résolution des demandes techniques et commerciales',
-        "Utilisation du CRM Salesforce pour le suivi des tickets clients",
-        'Traitement des réclamations avec escalade si nécessaire',
+        'Formation spécialisée en communication d\'entreprise',
+        'Techniques de communication orale et écrite',
+        'Gestion de la relation client et service clientèle',
+        'Maîtrise des outils bureautiques et de communication',
       ],
-      skills: ['Écoute active', 'Gestion du stress', 'Négociation', 'Empathie'],
+      skills: ['Communication', 'Relation client', 'Bureautique', 'Rédaction'],
     },
     {
-      title: 'Assistante Service Client – Maroc Assistance',
-      period: 'Août 2021 – Décembre 2022',
-      icon: MessageSquare,
+      title: 'Baccalauréat – Sciences Économiques',
+      period: '2018 – 2019',
+      institution: 'Lycée Ibn Khaldoun – Casablanca',
+      icon: BookOpen,
       description:
-        'Accueil téléphonique et orientation des assurés',
+        'Formation en sciences économiques et gestion',
       achievements: [
-        'Saisie des informations dans le système interne',
-        'Suivi des dossiers et relance des partenaires',
+        'Formation en sciences économiques et gestion',
+        'Développement des compétences analytiques',
+        'Bases solides en mathématiques et statistiques',
+        'Compréhension des mécanismes économiques',
       ],
-      skills: ['Communication', 'Bilinguisme', 'Documentation', 'Patience'],
+      skills: ['Analyse', 'Mathématiques', 'Économie', 'Gestion'],
     },
   ];
 
-  const metrics = [
+  const certifications = [
     {
-      icon: Clock,
-      label: "Temps moyen d'appel",
-      value: '4 min',
+      icon: Award,
+      label: "Diplôme obtenu",
+      value: 'DTS',
       color: 'text-blue-600',
     },
     {
-      icon: CheckCircle,
-      label: 'Taux de résolution',
-      value: '95%',
+      icon: Calendar,
+      label: 'Durée formation',
+      value: '2 ans',
       color: 'text-green-600',
     },
     {
-      icon: Users,
-      label: 'Satisfaction client',
-      value: '4.8/5',
+      icon: GraduationCap,
+      label: 'Niveau d\'études',
+      value: 'Bac+2',
       color: 'text-purple-600',
     },
     {
-      icon: Phone,
-      label: 'Appels traités',
-      value: '500+',
+      icon: BookOpen,
+      label: 'Spécialisation',
+      value: 'Communication',
       color: 'text-orange-600',
     },
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-900">
+    <section id="formation" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-            Expérience & Projets
+            Parcours académique
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Projets simulés et formations pour démontrer mes compétences en
-            relation client
+            Parcours éducatif incluant diplômes et établissements de formation
           </p>
         </div>
 
-        {/* Métriques de performance */}
+        {/* Métriques de formation */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {metrics.map((metric, index) => (
+          {certifications.map((cert, index) => (
             <div
               key={index}
-              className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white dark:bg-gray-900 rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <metric.icon className={`w-8 h-8 ${metric.color} mx-auto mb-3`} />
-              <div className={`text-2xl font-bold ${metric.color} mb-1`}>
-                {metric.value}
+              <cert.icon className={`w-8 h-8 ${cert.color} mx-auto mb-3`} />
+              <div className={`text-2xl font-bold ${cert.color} mb-1`}>
+                {cert.value}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
-                {metric.label}
+                {cert.label}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Expériences détaillées */}
+        {/* Formations détaillées */}
         <div className="space-y-8">
-          {experiences.map((exp, index) => (
+          {formations.map((formation, index) => (
             <div
               key={index}
-              className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="p-4 bg-blue-100 dark:bg-blue-900 rounded-lg">
-                    <exp.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                    <formation.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
                   </div>
                 </div>
 
@@ -114,25 +117,28 @@ const Experience: React.FC = () => {
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                        {exp.title}
+                        {formation.title}
                       </h3>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium">
-                        {exp.period}
+                      <p className="text-blue-600 dark:text-blue-400 font-medium mb-1">
+                        {formation.institution}
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">
+                        {formation.period}
                       </p>
                     </div>
                   </div>
 
                   <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                    {exp.description}
+                    {formation.description}
                   </p>
 
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div>
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
-                        Résultats obtenus :
+                        Contenu de la formation :
                       </h4>
                       <ul className="space-y-2">
-                        {exp.achievements.map((achievement, i) => (
+                        {formation.achievements.map((achievement, i) => (
                           <li key={i} className="flex items-start">
                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 mr-2 flex-shrink-0" />
                             <span className="text-gray-700 dark:text-gray-300 text-sm">
@@ -145,10 +151,10 @@ const Experience: React.FC = () => {
 
                     <div>
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
-                        Compétences développées :
+                        Compétences acquises :
                       </h4>
                       <div className="flex flex-wrap gap-2">
-                        {exp.skills.map((skill, i) => (
+                        {formation.skills.map((skill, i) => (
                           <span
                             key={i}
                             className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
@@ -169,4 +175,5 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+export default Formation;
+

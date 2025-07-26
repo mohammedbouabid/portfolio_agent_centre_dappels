@@ -28,8 +28,7 @@ const Hero: React.FC = () => {
 
           {/* Présentation */}
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            <span className="text-blue-600 dark:text-blue-400">Salma</span> El
-            Mansouri
+            <span className="text-blue-600 dark:text-blue-400">Souad </span> El Amrani
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">

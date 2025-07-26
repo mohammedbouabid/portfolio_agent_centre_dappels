@@ -13,7 +13,7 @@ const Chatbot: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Bonjour ! Je suis l'assistant virtuel de Salma. Posez-moi vos questions sur son profil. 😊",
+      text: "Bonjour ! Je suis l'assistant virtuel de Souad. Posez-moi vos questions sur son profil. 😊",
       sender: 'bot',
       timestamp: new Date(),
     },
@@ -31,7 +31,7 @@ const Chatbot: React.FC = () => {
   }, [messages]);
 
   const faqResponses: { [key: string]: string } = {
-    nom: "Je m'appelle Salma El Mansouri, candidate pour le poste d'Agent de Centre d'Appels à Casablanca.",
+    nom: "Je m'appelle Souad El Amrani, Agent de Centre d'Appels à Casablanca.",
     competences:
       'Mes principales compétences incluent : communication excellente en français, maîtrise des outils CRM, gestion du stress, écoute active, et travail en équipe.',
     experience:
@@ -39,15 +39,15 @@ const Chatbot: React.FC = () => {
     disponibilite:
       'Je suis disponible immédiatement pour commencer, en temps plein (40h/semaine) avec des horaires flexibles.',
     langues:
-      "Je parle français couramment (langue maternelle) et j'ai un niveau intermédiaire en anglais.",
+      "Je parle français couramment et j'ai un niveau intermédiaire en anglais.",
     salaire:
-      'Le poste proposé offre un salaire à partir de 5000 MAD/mois plus primes, ce qui correspond à mes attentes.',
+      'Je prefere un salaire de 5000 MAD/mois ou plus + primes, ce qui correspond à mes attentes.',
     formation:
-      "J'ai suivi une formation certifiée en relation client (95/100) et j'ai de l'expérience avec les outils CRM modernes.",
+      "J’ai étudié à l’OFPPT – ISTA NTIC Sidi Maarouf 2 à Casablanca et j'ai de l'expérience avec les outils CRM modernes.",
     motivation:
       "Je suis passionnée par la relation client et souhaite contribuer à l'excellence du service tout en développant mes compétences.",
     contact:
-      'Vous pouvez me contacter au +212 6 12 34 56 78 ou par email à salma.elmansouri@gmail.com. Je réponds rapidement !',
+      'Vous pouvez me contacter au +212 6 12 34 56 78 ou par email à souad.elamrani@gmail.com. Je réponds rapidement !',
     cv: 'Mon CV complet est disponible au téléchargement dans la section Contact. Il détaille toute mon expérience et mes formations.',
   };
 
@@ -84,15 +84,15 @@ const Chatbot: React.FC = () => {
       message.includes('salut') ||
       message.includes('hello')
     ) {
-      return "Bonjour ! Ravi de vous parler. Comment puis-je vous aider à en savoir plus sur le profil d'Amina ?";
+      return "Bonjour ! Ravi de vous parler. Comment puis-je vous aider à en savoir plus sur le profil de Souad  ?";
     }
 
     if (message.includes('merci')) {
-      return "Je vous en prie ! N'hésitez pas si vous avez d'autres questions sur Amina.";
+      return "Je vous en prie ! N'hésitez pas si vous avez d'autres questions sur Souad.";
     }
 
     // Réponse par défaut
-    return "Je peux vous renseigner sur : les compétences d'Amina, son expérience, sa disponibilité, ses langues, sa formation, ses motivations, ou ses coordonnées. Que souhaitez-vous savoir ?";
+    return "Je peux vous renseigner sur : les compétences de Souad, son expérience, sa disponibilité, ses langues, sa formation, ses motivations, ou ses coordonnées. Que souhaitez-vous savoir ?";
   };
 
   const handleSendMessage = async () => {
@@ -157,7 +157,7 @@ const Chatbot: React.FC = () => {
             <div className="flex items-center">
               <Bot className="w-6 h-6 mr-2" />
               <div>
-                <h4 className="font-semibold">Assistant de Salma</h4>
+                <h4 className="font-semibold">Assistant de Souad</h4>
                 <p className="text-xs opacity-80">En ligne</p>
               </div>
             </div>

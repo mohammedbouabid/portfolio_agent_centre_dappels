@@ -20,6 +20,7 @@ const Header: React.FC = () => {
     { href: '#apropos', label: 'À propos' },
     { href: '#competences', label: 'Compétences' },
     { href: '#experience', label: 'Expérience' },
+    { href: '#formation', label: 'Formation' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -40,7 +41,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
-            Salma El Mansouri
+            Souad El Amrani
           </div>
 
           {/* Desktop Navigation */}
@@ -66,7 +67,7 @@ const Header: React.FC = () => {
               <Phone size={18} />
             </a>
             <a
-              href="mailto:contact@exemple.com"
+              href="mailto:souad.elamrani@gmail.com"
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               title="Email"
             >
@@ -90,12 +91,6 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
-            <button
-              onClick={toggleTheme}
-              className="p-2 text-gray-600 dark:text-gray-400"
-            >
-              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 text-gray-600 dark:text-gray-400"
@@ -123,12 +118,21 @@ const Header: React.FC = () => {
                   <Phone size={18} />
                 </a>
                 <a
-                  href="mailto:contact@exemple.com"
+                  href="mailto:souad.elamrani@gmail.com"
                   className="p-2 text-blue-600"
                 >
                   <Mail size={18} />
                 </a>
-                <button className="p-2 text-purple-600">
+                <button 
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = 'https://drive.google.com/file/d/1XsjQpQR3Tn2d7pnI4dQuCX9pgF-OA76X/view?usp=drive_link'; // file path relative to public/
+                  link.target = "_blank";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+                className="p-2 text-purple-600">
                   <Download size={18} />
                 </button>
               </div>

@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Formation from './components/Formation';
 import Contact from './components/Contact';
 import Chatbot from './components/Chatbot';
 
@@ -18,6 +19,7 @@ function App() {
           <About />
           <Skills />
           <Experience />
+          <Formation />
           <Contact />
         </main>
         <Chatbot />
@@ -26,11 +28,11 @@ function App() {
         <footer className="bg-gray-900 dark:bg-gray-950 text-white py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-gray-400">
-              © 2025 Salma El Mansouri - Portfolio Agent Centre d'Appels
+              © 2025 Souad El Amrani - Portfolio Agent Centre d'Appels
               Casablanca
             </p>
             <p className="text-sm text-gray-500 mt-2">
-              salma.elmansouri@gmail.com • +212 6 12 34 56 78 • Casablanca,
+              souad.elamrani@gmail.com • +212 6 12 34 56 78 • Casablanca,
               Maroc
             </p>
           </div>

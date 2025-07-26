@@ -54,8 +54,8 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'salma.elmansouri@gmail.com',
-      action: 'mailto:salma.elmansouri@gmail.com',
+      value: 'souad.elamrani@gmail.com',
+      action: 'mailto:mailto:souad.elamrani@gmail.com',
       color: 'text-blue-600 dark:text-blue-400',
     },
     {
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
                     key={index}
                     href={info.action}
                     target='_blank'
-                    className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 block"
+                    className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 block"
                   >
                     <div className="flex items-center mb-3">
                       <div
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Disponibilité */}
-            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                 Ma disponibilité
               </h4>
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Formulaire de contact */}
-          <div className="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               Envoyez-moi un message
             </h3>
