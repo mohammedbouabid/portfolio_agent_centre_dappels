@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
       icon: Download,
       title: 'CV',
       value: 'Télécharger CV',
-      action: '#',
+      action: 'cv_salma.pdf',
       color: 'text-orange-600 dark:text-orange-400',
     },
   ];
