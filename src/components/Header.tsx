@@ -86,12 +86,6 @@ const Header: React.FC = () => {
             >
               <Download size={18} />
             </button>
-            <button
-              onClick={toggleTheme}
-              className="p-2 text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors"
-            >
-              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
