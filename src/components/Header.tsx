@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, Phone, Mail, Download } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import cv from '/cv_souad.pdf';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,7 +77,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = 'https://drive.google.com/file/d/1XsjQpQR3Tn2d7pnI4dQuCX9pgF-OA76X/view?usp=drive_link'; // file path relative to public/
+                link.href = cv; // file path relative to public/
                 link.target = "_blank";
                 document.body.appendChild(link);
                 link.click();

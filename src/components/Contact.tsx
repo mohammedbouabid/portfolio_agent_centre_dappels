@@ -8,6 +8,8 @@ import {
   CheckCircle,
   AlertCircle,
 } from 'lucide-react';
+import cv from '/cv_souad.pdf';
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -69,7 +71,7 @@ const Contact: React.FC = () => {
       icon: Download,
       title: 'CV',
       value: 'Télécharger CV',
-      action: 'https://drive.google.com/file/d/1XsjQpQR3Tn2d7pnI4dQuCX9pgF-OA76X/view?usp=drive_link',
+      action: cv,
       color: 'text-orange-600 dark:text-orange-400',
     },
   ];
